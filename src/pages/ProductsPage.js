@@ -20,9 +20,6 @@ const CircleButton = styled('button')({
   cursor: 'pointer',
 });
 
-const ADAFRUIT_IO_USERNAME = 'KhoiTran0909';
-const ADAFRUIT_IO_KEY = '';
-const FEED_KEY = 'KhoiTran0909/feeds/den-4-leb';
 
 export default function ValueSlider() {
   const [value, setValue] = useState(50);
@@ -38,7 +35,7 @@ export default function ValueSlider() {
     const interval = setInterval(() => {
       const API_LINK = `https://io.adafruit.com/api/v2/KhoiTran0909/feeds/den-4-leb`;
       const headers = {
-        'X-AIO-Key': 'aio_MyNt05MRsNfK5Ap6PKu4OCVsyXYb'
+        'X-AIO-Key': ''
       };
       fetch(API_LINK, { method: 'GET', headers })
         .then(response => response.json())
@@ -60,7 +57,7 @@ export default function ValueSlider() {
   //   const interval = setInterval(() => {
   //     const API_LINK = `https://io.adafruit.com/api/v2/KhoiTran0909/feeds/denthaymau`;
   //     const headers = {
-  //       'X-AIO-Key': 'aio_MyNt05MRsNfK5Ap6PKu4OCVsyXYb'
+  //       'X-AIO-Key': ''
   //     };
   //     fetch(API_LINK, { method: 'GET', headers })
   //       .then(response => response.json())
