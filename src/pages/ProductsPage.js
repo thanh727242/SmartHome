@@ -21,7 +21,7 @@ const CircleButton = styled('button')({
 });
 
 const ADAFRUIT_IO_USERNAME = 'KhoiTran0909';
-const ADAFRUIT_IO_KEY = 'aio_MyNt05MRsNfK5Ap6PKu4OCVsyXYb';
+const ADAFRUIT_IO_KEY = '';
 const FEED_KEY = 'KhoiTran0909/feeds/den-4-leb';
 
 export default function ValueSlider() {
